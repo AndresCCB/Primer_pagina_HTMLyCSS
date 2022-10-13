@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario creacion libros</title> 
+    
+    <link rel="stylesheet" href="CSS/estilo_bootstrap1.css" />
+    <script src="https://kit.fontawesome.com/3d5dc49622.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="uno col-12 col-md-3 col-xl-4">
+                <img src="/imagen/gabo.jpg" alt = "LOGO" height="250px"/>
+            </div>
+            <div class="dos col-12 col-md-6 col-xl-4">
+                <h1 class=".d-none .d-md-block .d-xl-none">BIBLIOTECA G74</h1>
+            </div>
+            <div class="tres col-12 col-md-3 col-xl-4">
+                <nav class="navbar bg-light">
+                    <form class="container-fluid justify-content-start">
+                        <button class="btn btn-outline-success me-2" type="button">Libros</button>
+                        <button class="btn btn-outline-success me-2" type="button">Socios</button>
+                        <button class="btn btn-outline-success me-2" type="button">Autores</button>
+                    </form>
+                </nav>                 
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <h2 class="text-danger">Formulario</h2>
+        <form class="formulario">
+            <label class="form-label" for="nombre">Nombre</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form-control" type ="text" name ="Nombre" id="nombre"  maxlength ="50" 
+            required="true" placeholder="Ingresar nombre"> <!-- style="width: 300px; color: blue; background: wheat;"--></input>&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /> <!-- FORMA DE COLOCAR UN ESTILO A LAS ETIQUETAS, PERO DIRECTAMENTE A SOLO 1 ESTIQUETA-->
+                
+            <label class="form-label" for ="fecha">Fecha Nacimiento</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form-control" type ="date" name ="fecha" id="fecha" size =40 required><br /><br />
+                
+            <label class="form-label" for="telefono">Numero Telefono</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form-control" type ="number" name ="telefono" id="telefono" size =40><br /><br />
+                
+            <label class="form-label" for="correo">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form-control" type ="email" name ="correo" id="correo" size =40><br /><br />
+               
+            <label class="form-label" for="ciudad">Ciudad</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="form-select" name ="ciudad" id="ciudad">
+                <option value = "1"> Bogota</option>
+                <option value = "2"> Medellin</option>
+                <option value = "3"> Bucaramanga</option>
+            </select><br /><br />
+                
+            <label class="form-label" for="observaciones">Observaciones:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea class="form-control" name = "observaciones" id="observaciones" rows="10" cols="20"></textarea><br /><br />
+                
+            <label class="form-label">Genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="label_formulario2">Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="Masculino" />
+            <label class="label_formulario2">Femenino</label>
+            <input type="radio" name="genero" id="femenino" value="Femenino" /><br /><br />
+
+            <label class="form-label">Ingresar Materias:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="label_formulario2">Matematicas</label>
+            <input type="checkbox" name="materias" id="matematicas" />
+            <label class="label_formulario2">Quimica</label>
+            <input type="checkbox" name="materias" id="quimica" />
+            <label class="label_formulario2">Fisica</label>
+            <input type="checkbox" name="materias" id="fisica" /><br /><br />
+
+            <button type="button" class="btn btn-success">Grabar</button>
+            <button type="button" class="btn btn-success">Cancelar</button>
+            
+
+        </form>
+
+        <br><br>
+        
+        <h2 class="text-danger">MOSTRAR INFORMACION HORARIOS</h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+
+        <br /> <!-- SALTO DE LINEA-->
+        <br />
+
+
+        <h2 class="text-danger">IMAGENES</h2> <!-- centra unicamente el titulo, centra todo lo que este dentro edl center-->
+        <center>
+            <!-- crea un hipervinculo de una pagina en una imagen la cual se trae desde internet con el url-->
+            <a href = "https://www.traveler.es/experiencias/galerias/paisajes-de-la-vida-de-gabriel-garcia-marquez/1329"> 
+                <img src="https://picsum.photos/700/400?random" alt = "Paisaje"/>
+            </a>
+            <p><a href = "https://es-la.facebook.com/public/Gabriel-Garcia">Facebook Garbiel Garcia Marquez</a></p>
+        </center>
+    </main>
+
+<br><br/>
+<!-- BASE DE BOOSTRAP-->
+<div class = "container-fluid">
+    <div class = "row">
+      <div class = "cajapie">
+        <div class =  "pie1 col-12 col-md-6">
+          <div class="titulo_integrantes">
+            <p class="f-3">INTEGRANTES</p>
+          </div>
+          <div class="integrantes2">
+            <p class="fs-6">NATALIA</p>
+            <p class="fs-6">JUAN</p>
+            <p class="fs-6">MILENA</p>
+          </div>
+        </div> 
+        <div class =  "pie2 col-12 col-md-6">
+          <div class="titulo_redes_sociales">
+            <p class="fs-3">REDES SOCIALES</p>
+            <div class="redes_sociales2">
+              <h2><a href = "https://es-la.facebook.com/public/Gabriel-Garcia"><i class="icono1 fa fa-facebook-official" aria-hidden="true"></i></a>
+              <i class = "icono1 fa fa-instagram" aria-hidden="true"></i>
+              <i class = "icono1 fa fa-twitter" aria-hidden="true"></i></h2>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+</div>
+
+<br><br/>
+
+  <!--<footer>
+        <div class="integrantes">
+            <h5 style = "font-family: Nunito;">Natalia</h5>
+            <h5>Rafinha</h5>
+            <h5>Milena</h5>
+        </div>
+        <div class="redes_sociales">
+            <a href = "https://es-la.facebook.com/public/Gabriel-Garcia"><i class="icono1 fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href = "https://es-la.facebook.com/public/Gabriel-Garcia"><i class="icono1 fa fa-instagram" aria-hidden="true"></i></a>
+            
+        </div> 
+    </footer>-->
+</body>
+</html>

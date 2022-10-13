@@ -1,0 +1,304 @@
+/*
+input{
+    width: 300px; 
+    color: black; 
+    background: wheat;
+}
+
+input[type = date]{
+    width: 200px;
+    color: black;
+    background: plum;            
+}
+*/
+h1{
+    color: #2471A3;
+}
+header{
+    width: 90%;
+    height: 250px;
+    background: white;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+nav{
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.logo{
+    width: 40%;
+    height: 140px;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    justify-content: center;
+    display: flex;
+}
+
+#titulo{
+    width: 50%;
+    height: 50px;
+    background: white;
+    float: left;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.menu{
+    width: 50%;
+    height: 50px;
+    background: white;
+    float: left;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+header ul li{
+    width: 25%;
+    height: 40px;
+    background: #2471A3;
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+header ul li a:hover{
+    color: blueviolet;
+    font-weight: 300;
+}
+/*
+header ul li:hover{
+    background: chocolate;
+}
+*/
+main{
+    width: 90%;
+    background: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    text-align: center;
+}
+
+.formulario{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background: white;
+    text-align: left;   
+}
+
+.form-label{
+    width: 30%;
+}
+
+.label_formulario{
+    width: 30%;
+    display: inline-block;
+}
+
+.label_formulario2{
+    width: 10; /* que es 10??*/
+    display: inline-block;
+}
+
+.input_formulario{
+    width: 300px;
+    display: inline-block;
+}
+
+.btn{
+    width: 300px;
+    height: 40px;
+}
+
+.boton_formulario{
+    width: 200px;
+    height: 35px;
+    background: #2471A3;
+    color: white;
+    margin-left: 10%;
+}
+
+.boton_formulario:hover{
+    
+    color: darkturquoise;
+}
+
+.uno{
+    background: white;
+    text-align: center;
+}
+
+.dos{
+    background: white;
+    padding-top: 100px;
+}
+
+.alig-items-center{
+    align-items: center;  
+}
+
+.tres{
+    background: white;
+    padding-top: 100px;
+}
+
+.cuatro{
+    background: white;
+}
+
+.tabla{
+    width: 100%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.estilo-tabla{
+    width: 100%;
+    border: 1px solid;
+}
+
+td, th{
+    border: 1px solid;
+}
+th{
+    background: #2471A3;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background: #2471A3;
+}
+
+.integrantes{
+    width: 40%;
+    height: 150px;
+    float: left;
+    margin-left: 20%;
+}
+
+.redes_sociales{
+    width: 40%;
+    height: 150px;
+    float: left;
+}
+
+.icono1{
+    font-size: 30px !important;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.pie1{
+    background: #2471A3;
+}
+
+.pie2{
+    background: aquamarine;
+}
+
+
+@media screen and (max-width: 640px) {
+    .dos{
+        background: white;
+        padding-top: 0px;
+        padding-left: 50px;
+    }
+    header{
+        width: 100%;
+        height: 500px;
+        background: #fff;
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+    .logo{
+        width: 100%;
+        height: 180px;
+        background-color: #fff;
+        justify-content: center;
+        display: flex;
+    }
+    #titulo{
+        width: 100%;
+        height: 50px;
+        background: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 60px;
+        align-items: center;
+    }
+    .menu{
+        width: 100%;
+        height: 80px;
+        background: white;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    header ul li{
+        width: 100%;
+        height: 40px;
+        background: #2471A3;
+        margin-bottom: 10px;
+    }
+    .formulario{
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        background: white;
+        text-align: left;  
+    }
+    .label_formulario{
+        width: 70%;
+    }
+    .label_formulario2{
+        width: 80%;
+    }
+    .input_formulario{
+        width: 300px;
+    }
+    .boton_formulario{
+        width: 80%;
+        height: 35px;
+        margin-bottom: 3px;
+    }
+    .tabla{
+        width: 100%;
+        height: 150px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    td, th{
+        border: 1px solid;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width:640px) and (max-width:1280px) {
+    .formulario{
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+
+        background: white;
+        text-align: left;  
+    }
+    
+}

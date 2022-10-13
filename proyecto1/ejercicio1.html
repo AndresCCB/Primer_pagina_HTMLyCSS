@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario creacion libros</title> <!-- titulo de la pestaña arriba -->
+    <!-- Otra forma de acomodar el estilo, pero de toda la pagina de una vez-->
+    <!--
+    <style> 
+        input{
+            width: 300px; 
+            color: black; 
+            background: wheat;
+        }
+        input[date]{
+            width: 200px;
+            color: black;
+            background: wheat;            
+        }
+    </style>
+    -->
+    <!-- relacionar la pagina de estilos de css, con este cdigo de html -->
+    <link rel="stylesheet" href="CSS/primer_estilo.css" />
+    <script src="https://kit.fontawesome.com/3d5dc49622.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <!-- LOGOS -->
+        <!--<div id="logo">texto</div>-->
+        <div class="logo">
+            <img src="/proyecto1/imagen/gabo.jpg" alt = "LOGO"/>
+        </div>
+
+        <div id="titulo">
+            <h1>BIBLIOTECA G74</h1>
+        </div>
+
+        <!-- imagen guardarda en una carpeta de manera local-->
+        <!--<img src="/proyecto1/imagen/gabo.jpg" alt = "LOGO" width="200" height="200"/>  el alt, lo que sirve es para cuando no abra la imagen aparece esa palabra, weidht y height acomodan el tamaño de la imagen-->
+        <div class="menu">
+            <ul><!-- UNA LISTA con puntico-->
+                <!-- crea un hipervinculo en una palabra con una pagina de internet, para esto se emplea el url de la pagina-->
+                <li><a href = "https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez">Biografia</a></li>
+                <li><a href = "https://www.bbc.com/mundo/video_fotos/2014/04/140403_galeria_garcia_marquez_ob_ng">Fotos</a></li>
+                <li><a href = "https://www.culturagenial.com/es/gabriel-garcia-marquez/">Libros</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!--
+    <nav>
+        <!-- EJEMPLO ul
+        <ul> <!-- UNA LISTA con puntico 
+            <!-- crea un hipervinculo en una palabra con una pagina de internet, para esto se emplea el url de la pagina
+            <li><a href = "https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez">Biografia</a></li>
+            <li><a href = "https://www.bbc.com/mundo/video_fotos/2014/04/140403_galeria_garcia_marquez_ob_ng">Fotos</a></li>
+            <li><a href = "https://www.culturagenial.com/es/gabriel-garcia-marquez/">Libros</a></li>
+        </ul>
+        <!-- EJEMPLO ol, crea lista con numero
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ol>
+        <!-- EJEMPLO dl, crea lista con puntico pero sin identacion
+        <dl>
+            <li>HTML 1</li>
+            <li>CSS 2</li>
+            <li>JAVASCRIPT 3</li>
+        </dl>
+    </nav>
+    -->
+
+    <main>
+
+        <h2>Formulario</h2>
+        <form class="formulario">
+            <label class="label_formulario" for="nombre">Nombre</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input_formulario" type ="text" name ="Nombre" id="nombre"  maxlength ="50" 
+            required="true" placeholder="Ingresar nombre"> <!-- style="width: 300px; color: blue; background: wheat;"--></input>&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /> <!-- FORMA DE COLOCAR UN ESTILO A LAS ETIQUETAS, PERO DIRECTAMENTE A SOLO 1 ESTIQUETA-->
+                
+            <label class="label_formulario" for ="fecha">Fecha Nacimiento</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input_formulario" type ="date" name ="fecha" id="fecha" size =40 required><br /><br />
+                
+            <label class="label_formulario" for="telefono">Numero Telefono</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input_formulario" type ="number" name ="telefono" id="telefono" size =40><br /><br />
+                
+            <label class="label_formulario" for="correo">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input_formulario" type ="email" name ="correo" id="correo" size =40><br /><br />
+               
+            <label class="label_formulario" for="ciudad">Ciudad</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="input_formulario" name ="ciudad" id="ciudad">
+                <option value = "1"> Bogota</option>
+                <option value = "2"> Medellin</option>
+                <option value = "3"> Bucaramanga</option>
+            </select><br /><br />
+                
+            <label class="label_formulario" for="observaciones">Observaciones:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea class="input_formulario" name = "observaciones" id="observaciones" rows="10" cols="20"></textarea><br /><br />
+                
+            <label class="label_formulario">Genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="label_formulario2">Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="Masculino" />
+            <label class="label_formulario2">Femenino</label>
+            <input type="radio" name="genero" id="femenino" value="Femenino" /><br /><br />
+
+            <label class="label_formulario">Ingresar Materias:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="label_formulario2">Matematicas</label>
+            <input type="checkbox" name="materias" id="matematicas" />
+            <label class="label_formulario2">Quimica</label>
+            <input type="checkbox" name="materias" id="quimica" />
+            <label class="label_formulario2">Fisica</label>
+            <input type="checkbox" name="materias" id="fisica" /><br /><br />
+
+            <button class="boton_formulario">Grabar</button>
+            <button class="boton_formulario">Cancelar</button>
+
+        </form>
+
+        <h2>MOSTRAR INFORMACION HORARIOS</h2>
+        <!-- Crear una tabla-->
+        <div class="tabla">
+            <table class="estilo-tabla">
+                <tr>
+                    <th></th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIERCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                </tr>
+                <tr>
+                    <td>6-8</td>
+                    <td>QUIMICA</td>
+                    <td>FISICA</td>
+                    <td>MATEMATICAS</td>
+                    <td>ESPAÑOL</td>
+                    <td>INGLES</td>
+                </tr>
+                <tr>
+                    <td>8-10</td>
+                    <td>ESPAÑOL</td>
+                    <td>INGLES</td>
+                    <td>FISICA</td>
+                    <td>MATEMATICAS</td>
+                    <td>QUIMICA</td>
+                </tr>
+            </table>
+        </div>
+
+        <br /> <!-- SALTO DE LINEA-->
+        <br />
+
+        <!--  </center> PARA CENTAR TODO -->
+
+        <center><h2>TITULO MAIN</h2></center> <!-- centra unicamente el titulo, centra todo lo que este dentro edl center-->
+        <center>
+            <!-- crea un hipervinculo de una pagina en una imagen la cual se trae desde internet con el url-->
+            <a href = "https://www.traveler.es/experiencias/galerias/paisajes-de-la-vida-de-gabriel-garcia-marquez/1329"> 
+                <img src="https://picsum.photos/700/400?random" alt = "Paisaje"/>
+            </a>
+            <p><a href = "https://es-la.facebook.com/public/Gabriel-Garcia">Facebook Garbiel Garcia Marquez</a></p>
+        </center>
+    </main>
+
+    <footer>
+        <div class="integrantes">
+            <h5>Natalia</h5>
+            <h5>Rafinha</h5>
+            <h5>Milena</h5>
+        </div>
+        <div class="redes_sociales">
+            <a href = "https://es-la.facebook.com/public/Gabriel-Garcia"><i class="icono1 fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href = "https://es-la.facebook.com/public/Gabriel-Garcia"><i class="icono1 fa fa-instagram" aria-hidden="true"></i></a>
+            
+        </div> 
+    </footer>
+
+    <!--
+    <h1>hola mundo</h1>
+    <h2>hola mundo</h2>
+    <h3>hola mundo</h3>
+    <h4>hola mundo</h4>
+    <h5>hola mundo</h5>
+    <h6>hola mundo</h6> Muestra de l,os titulos y subtitulos segun tamaño, llega maximo hasta h6, luego h7 ya lo muestra como texto normal 
+    <h7>hola mundo</h7>
+    -->
+</body>
+</html>
